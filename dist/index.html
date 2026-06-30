@@ -74,26 +74,47 @@
             <h2>Our Services</h2>
             <p>Comprehensive dental care designed for comfort, confidence, and long-term health - from routine checkups to advanced restorative and cosmetic treatments.</p>
           </div>
-          <div class="service-showcase" aria-label="Featured dental services">
-            <article class="service-slide service-slide--side" aria-hidden="true">
-              <img src="./assets/new-design/service-side-left.png" alt="" />
-              <div>
-                <h3>IV Sedation Dentistry</h3>
+          <div class="service-carousel" aria-label="Featured dental services carousel">
+            <div class="service-showcase" aria-live="polite">
+              <article class="service-slide">
+                <img src="./assets/new-design/service-main.png" alt="Dental implant technology" />
+                <div>
+                  <h3>Dental Implants</h3>
+                  <p>Permanent solutions for missing teeth - natural-looking, durable, and long-lasting.</p>
+                </div>
+              </article>
+              <article class="service-slide">
+                <img src="./assets/new-design/service-side-left.png" alt="Comfortable dental treatment room" />
+                <div>
+                  <h3>IV Sedation Dentistry</h3>
+                  <p>Calm, supported visits for patients who want a more relaxed treatment experience.</p>
+                </div>
+              </article>
+              <article class="service-slide">
+                <img src="./assets/new-design/service-side-right.jpg" alt="Cosmetic dental care setting" />
+                <div>
+                  <h3>Cosmetic Dentistry</h3>
+                  <p>Smile-enhancing treatments planned around natural aesthetics, balance, and confidence.</p>
+                </div>
+              </article>
+              <article class="service-slide">
+                <img src="./assets/new-design/technology-intraoral-camera.png" alt="Digital dental scanning equipment" />
+                <div>
+                  <h3>3D Dental Scanning</h3>
+                  <p>Precise digital imaging that supports clearer planning, better fit, and smoother care.</p>
+                </div>
+              </article>
+            </div>
+            <div class="service-carousel__controls" aria-label="Service carousel controls">
+              <button class="service-carousel__button" type="button" data-service-prev aria-label="Previous service">‹</button>
+              <div class="service-carousel__dots" aria-hidden="true">
+                <span class="is-active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
-            </article>
-            <article class="service-slide service-slide--main">
-              <img src="./assets/new-design/service-main.png" alt="Dental implant technology" />
-              <div>
-                <h3>Dental Implants</h3>
-                <p>Permanent solutions for missing teeth - natural-looking, durable, and long-lasting.</p>
-              </div>
-            </article>
-            <article class="service-slide service-slide--side" aria-hidden="true">
-              <img src="./assets/new-design/service-side-right.jpg" alt="" />
-              <div>
-                <h3>Cosmetic Dentistry</h3>
-              </div>
-            </article>
+              <button class="service-carousel__button" type="button" data-service-next aria-label="Next service">›</button>
+            </div>
           </div>
         </section>
 
