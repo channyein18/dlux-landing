@@ -37,14 +37,12 @@ document.querySelectorAll(".faq-item").forEach((item) => {
   });
 });
 
-const serviceCarousel = document.querySelector(".service-carousel");
-
-if (serviceCarousel) {
-  const track = serviceCarousel.querySelector(".service-showcase");
-  const slides = Array.from(serviceCarousel.querySelectorAll(".service-slide"));
-  const dots = Array.from(serviceCarousel.querySelectorAll(".service-carousel__dots span"));
-  const previousButton = serviceCarousel.querySelector("[data-service-prev]");
-  const nextButton = serviceCarousel.querySelector("[data-service-next]");
+const setupCardCarousel = (carousel, trackSelector, slideSelector) => {
+  const track = carousel.querySelector(trackSelector);
+  const slides = Array.from(carousel.querySelectorAll(slideSelector));
+  const dots = Array.from(carousel.querySelectorAll(".service-carousel__dots span"));
+  const previousButton = carousel.querySelector("[data-service-prev], [data-carousel-prev]");
+  const nextButton = carousel.querySelector("[data-service-next], [data-carousel-next]");
   let activeIndex = 0;
 
   const updateDots = () => {
@@ -78,4 +76,12 @@ if (serviceCarousel) {
       updateDots();
     }
   }, { passive: true });
-}
+};
+
+document.querySelectorAll(".service-carousel").forEach((carousel) => {
+  setupCardCarousel(carousel, ".service-showcase", ".service-slide");
+});
+
+document.querySelectorAll(".care-carousel").forEach((carousel) => {
+  setupCardCarousel(carousel, ".care-showcase", ".care-card");
+});

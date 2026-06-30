@@ -209,26 +209,33 @@
             <h2>Total Dental Care, Tailored for You</h2>
             <p>We're more than a dental office we're a sanctuary for your smile. Here's what sets us apart:</p>
           </div>
-          <div class="care-showcase">
-            <article class="care-card care-card--side">
-              <img src="./assets/new-design/care-bilingual.png" alt="Dental treatment room" />
-              <h3>Bilingual Team</h3>
-              <p>Serving patients with care in both English and Spanish</p>
-            </article>
-            <article class="care-card care-card--main">
-              <img src="./assets/new-design/care-technology.png" alt="Advanced dental treatment room" />
-              <h3>Advanced Technology</h3>
-              <p>Digital X-rays, 3D scanning, and same-day treatment solutions</p>
-            </article>
-            <article class="care-card care-card--side">
-              <img src="./assets/new-design/care-comfort.png" alt="Dental model and equipment" />
-              <h3>Comfort-First Care</h3>
-              <p>Sedation options and a gentle approach for every patient</p>
-            </article>
-          </div>
-          <div class="carousel-controls" aria-hidden="true">
-            <span>‹</span>
-            <span>›</span>
+          <div class="care-carousel" aria-label="Care highlights carousel">
+            <div class="care-showcase" aria-live="polite">
+              <article class="care-card">
+                <img src="./assets/new-design/care-bilingual.png" alt="Dental treatment room" />
+                <h3>Bilingual Team</h3>
+                <p>Serving patients with care in both English and Spanish</p>
+              </article>
+              <article class="care-card">
+                <img src="./assets/new-design/care-technology.png" alt="Advanced dental treatment room" />
+                <h3>Advanced Technology</h3>
+                <p>Digital X-rays, 3D scanning, and same-day treatment solutions</p>
+              </article>
+              <article class="care-card">
+                <img src="./assets/new-design/care-comfort.png" alt="Dental model and equipment" />
+                <h3>Comfort-First Care</h3>
+                <p>Sedation options and a gentle approach for every patient</p>
+              </article>
+            </div>
+            <div class="service-carousel__controls" aria-label="Care carousel controls">
+              <button class="service-carousel__button" type="button" data-carousel-prev aria-label="Previous care highlight">‹</button>
+              <div class="service-carousel__dots" aria-hidden="true">
+                <span class="is-active"></span>
+                <span></span>
+                <span></span>
+              </div>
+              <button class="service-carousel__button" type="button" data-carousel-next aria-label="Next care highlight">›</button>
+            </div>
           </div>
         </section>
 
