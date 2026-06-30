@@ -7,24 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Roboto:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=25" />
+    <link rel="stylesheet" href="./styles.css?v=48" />
   </head>
   <body>
     <div class="site-shell">
-      <header class="topbar" aria-label="Clinic contact information">
-        <div class="container topbar__inner">
-          <span>No. 1186, 1st Floor, Pinlon Road, 35 Ward, North Dagon, Yangon, Myanmar, 11421</span>
-          <a href="tel:+959940077977">+95 9 940 077977</a>
-        </div>
-      </header>
-
       <header class="main-header">
-        <div class="container header__inner">
-          <a class="brand" href="#home" aria-label="D'Lux Premium Dental Clinic home">
-            <img src="./assets/53d39229-1191-45c0-a890-2c95dc95e4e8.jpg" alt="D'Lux Premium Dental Clinic" />
+        <div class="header__inner">
+          <a class="brand" href="./index.html#home" aria-label="D'Lux Premium Dental Clinic home">
+            <img src="./assets/new-design/logo.png" alt="D'Lux Premium Dental Clinic" />
           </a>
           <button class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
             <span class="menu-line"></span>
@@ -32,220 +25,281 @@
             <span class="menu-line"></span>
           </button>
           <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
-            <a class="is-active" href="#services">Services</a>
-            <a href="#doctors">Doctors</a>
-            <a href="#about">About Us</a>
-            <a class="nav-cta" href="https://onelink.to/k983eu">Download App</a>
+            <a href="./index.html#home">Home</a>
+            <div class="nav-menu">
+              <a href="./about.html">About Us <img src="./assets/new-design/chevron-down.svg" alt="" /></a>
+              <div class="nav-submenu">
+                <a href="./about.html">About Us</a>
+                <a href="./meet-dentists.html">Meet the Dentists</a>
+                <a href="./meet-dentists.html">Meet Our Team</a>
+                <a href="./index.html#clinic">Office Tour</a>
+              </div>
+            </div>
+            <div class="nav-menu">
+              <a href="#reviews">Patient Experiences <img src="./assets/new-design/chevron-down.svg" alt="" /></a>
+            </div>
+            <div class="nav-menu">
+              <a href="#services">Services <img src="./assets/new-design/chevron-down.svg" alt="" /></a>
+            </div>
+            <a href="./technology.html">Technology &amp; Equipment</a>
+            <a href="./blog.html">Oral Health Blog</a>
+            <a href="./faq.html">FAQs</a>
+            <a href="./contact.html">Contact Us</a>
           </nav>
+          <a class="header-call" href="tel:+959940077977">Call +95 9 940 077 977</a>
         </div>
       </header>
 
       <main>
         <section class="hero" id="home">
-          <img class="hero__image hero__image--base" src="./assets/91e16840-9a91-46ff-9f40-edb64d9e70a0.png" alt="" />
-          <img class="hero__image hero__image--overlay" src="./assets/df37e0d4-4795-4253-b94f-a1ec3d3d0cb4.png" alt="" />
           <div class="container hero__content">
-            <h1>Reliable Comfortable Genuine</h1>
-            <div class="contact-line">
-              <img src="./assets/c7876135-152e-4cc1-b6b0-09cdf8ebb565.svg" alt="" />
-              <span>No. 1186, 1st Floor, Pinlon Road, 35 Ward, North<span class="mobile-hero-break"></span>Dagon, Yangon, Myanmar.</span>
+            <h1>Exceptional Dental Care in <span>Premium Dental Clinic</span></h1>
+            <p class="hero__eyebrow">Your Smile , Evalated</p>
+            <p class="hero__copy">Experience premium dental care enhanced by advanced technology, where personalized treatments, expert care, and exceptional comfort come together to create a truly elevated experience.</p>
+            <div class="hero__actions">
+              <a class="button button--light" href="https://onelink.to/k983eu">Book an Appointment</a>
+              <a class="button button--outline" href="tel:+959940077977">Call +95 9 940 077 977</a>
             </div>
-            <div class="contact-line">
-              <img src="./assets/2c1cbb73-f284-432f-8643-ea4ad1d4e327.svg" alt="" />
-              <span>+95 9 940 077977</span>
-            </div>
-            <div class="store-row" aria-label="Download app">
-              <a class="store-button" href="#app" aria-label="Get it on Google Play">
-                <img class="store-button__icon" src="./assets/f337233d-d54c-4238-b0a5-b92ab47df8ac.svg" alt="" />
-                <span>
-                  <small>GET IT ON</small>
-                  <strong>Google Play</strong>
-                </span>
-              </a>
-              <a class="store-button" href="#app" aria-label="Download on the App Store">
-                <img class="store-button__icon store-button__icon--apple" src="./assets/390bff05-6ba2-44e8-b0b3-7239f4afd346.svg" alt="" />
-                <span>
-                  <small>Download on the</small>
-                  <strong>App Store</strong>
-                </span>
-              </a>
-            </div>
+          </div>
+        </section>
+
+        <section class="hero-image-section" aria-label="D'Lux clinic exterior">
+          <div class="wide-container">
+            <img class="hero-image" src="./assets/new-design/hero-clinic.png" alt="D'Lux Premium Dental Clinic exterior" />
           </div>
         </section>
 
         <section class="section services-section" id="services">
-          <div class="container section__inner">
-            <div class="section-heading section-heading--center">
-              <h2>Our Services &amp; Packages</h2>
-              <p>Explore our dental services and packages designed to help you achieve a healthy, confident smile.</p>
-            </div>
-            <div class="service-grid">
-              <article class="service-card">
-                <img src="./assets/32f784f9-0382-499f-9e4c-abbfc0115f46.png" alt="" />
-                <h3>Laser Technology</h3>
-                <p>Worlds most advanced Diode Laser. Your treatment experience will be relaxing &amp; smooth.</p>
-              </article>
-              <article class="service-card">
-                <img src="./assets/ca84e9b1-84b0-40e9-8a1b-14cf8bc751ce.png" alt="" />
-                <h3>Painless Injection</h3>
-                <p>Only dental clinic in New York, USA utilising Painless Injection system. You will be amazed!</p>
-              </article>
-              <article class="service-card">
-                <img src="./assets/239dd58a-d8e4-4a46-8d45-bf7f83a02405.png" alt="" />
-                <h3>Dental Implant</h3>
-                <p>30+ years of experience in Dental Implant with specialist care. You will be able to chew properly again!</p>
-              </article>
-              <article class="service-card">
-                <img src="./assets/5faa4fc8-3660-4198-821e-7f8166e01de4.png" alt="" />
-                <h3>3D Dental Scanner</h3>
-                <p>One of the world's most advanced 3D Dental Scanner with auto scanning only one in New York!</p>
-              </article>
-              <article class="service-card">
-                <img src="./assets/82870d90-0009-4473-9a09-6c8287ef8cb1.png" alt="" />
-                <h3>Digital Smile Design</h3>
-                <p>We help to re-design your smile and shape your teeth to create a customised smile for your face!</p>
-              </article>
-              <article class="service-card">
-                <img src="./assets/9cb7792d-0177-4470-bbbb-9782a89fb71a.png" alt="" />
-                <h3>Crown and Bridge</h3>
-                <p>Transform you blackish gum to pinkish colour with painless, single appointment Laser Gum Treatment</p>
-              </article>
-            </div>
+          <div class="container section-heading section-heading--center">
+            <h2>Our Services</h2>
+            <p>Comprehensive dental care designed for comfort, confidence, and long-term health - from routine checkups to advanced restorative and cosmetic treatments.</p>
           </div>
-        </section>
-
-        <section class="section team-section" id="doctors">
-          <div class="container section__inner">
-            <div class="section-heading section-heading--split">
-              <div>
-                <h2>Meet the Team</h2>
-                <p>A team of passionate professionals, ready to guide you with expertise, empathy, and care at every stage of your dental journey.</p>
-              </div>
-              <div class="slider-dots" aria-hidden="true">
+          <div class="service-carousel" aria-label="Featured dental services carousel">
+            <div class="service-showcase" aria-live="polite">
+              <article class="service-slide">
+                <img src="./assets/new-design/service-main.png" alt="Dental implant technology" />
+                <div>
+                  <h3>Dental Implants</h3>
+                  <p>Permanent solutions for missing teeth - natural-looking, durable, and long-lasting.</p>
+                </div>
+              </article>
+              <article class="service-slide">
+                <img src="./assets/new-design/service-side-left.png" alt="Comfortable dental treatment room" />
+                <div>
+                  <h3>IV Sedation Dentistry</h3>
+                  <p>Calm, supported visits for patients who want a more relaxed treatment experience.</p>
+                </div>
+              </article>
+              <article class="service-slide">
+                <img src="./assets/new-design/service-side-right.jpg" alt="Cosmetic dental care setting" />
+                <div>
+                  <h3>Cosmetic Dentistry</h3>
+                  <p>Smile-enhancing treatments planned around natural aesthetics, balance, and confidence.</p>
+                </div>
+              </article>
+              <article class="service-slide">
+                <img src="./assets/new-design/technology-intraoral-camera.png" alt="Digital dental scanning equipment" />
+                <div>
+                  <h3>3D Dental Scanning</h3>
+                  <p>Precise digital imaging that supports clearer planning, better fit, and smoother care.</p>
+                </div>
+              </article>
+            </div>
+            <div class="service-carousel__controls" aria-label="Service carousel controls">
+              <button class="service-carousel__button" type="button" data-service-prev aria-label="Previous service">‹</button>
+              <div class="service-carousel__dots" aria-hidden="true">
                 <span class="is-active"></span>
                 <span></span>
                 <span></span>
+                <span></span>
               </div>
-            </div>
-            <div class="team-grid">
-              <article class="doctor-card doctor-card--featured">
-                <img src="./assets/63f2e1a8-f4fc-4830-986b-c8a62af693e5.png" alt="Dr. Aye Myat Kaung" />
-                <div>
-                  <h3>Dr. Aye Myat Kaung</h3>
-                  <p>General Dentist</p>
-                </div>
-              </article>
-              <article class="doctor-card">
-                <img src="./assets/2b61793e-08df-41d9-8759-0e2393a96735.png" alt="Dr. Aye Pwint Phyu" />
-                <div>
-                  <h3>Dr. Aye Pwint Phyu</h3>
-                  <p>General Dentist</p>
-                </div>
-              </article>
-              <article class="doctor-card">
-                <img src="./assets/6ec5f046-f6d7-44aa-8848-d77ff72cde78.png" alt="Dr. Lin Lae Lae Naing" />
-                <div>
-                  <h3>Dr. Lin Lae Lae Naing</h3>
-                  <p>General Dentist</p>
-                </div>
-              </article>
-              <article class="doctor-card">
-                <img src="./assets/ef0c621a-83f4-451c-b5b0-8ef728e24adc.png" alt="Dr. Ei Khine Min" />
-                <div>
-                  <h3>Dr. Ei Khine Min</h3>
-                  <p>General Dentist</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section app-section" id="app">
-          <div class="container section__inner">
-            <div class="section-heading section-heading--center">
-              <h2>Take D'Lux Dental With You</h2>
-              <p>Access dental services, manage appointments, and receive the latest offers right from your mobile device.</p>
-              <div class="store-row">
-                <a class="store-button" href="#app" aria-label="Get it on Google Play">
-                  <img class="store-button__icon" src="./assets/f337233d-d54c-4238-b0a5-b92ab47df8ac.svg" alt="" />
-                  <span>
-                    <small>GET IT ON</small>
-                    <strong>Google Play</strong>
-                  </span>
-                </a>
-                <a class="store-button" href="#app" aria-label="Download on the App Store">
-                  <img class="store-button__icon store-button__icon--apple" src="./assets/390bff05-6ba2-44e8-b0b3-7239f4afd346.svg" alt="" />
-                  <span>
-                    <small>Download on the</small>
-                    <strong>App Store</strong>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="phone-gallery" aria-label="D'Lux mobile app previews">
-              <img src="./assets/4fc7b8e1-8781-41a7-b55a-0d6e2f0189a8.png" alt="D'Lux app preview" />
-              <img src="./assets/9a746fd4-3c59-4a16-9372-62c0fc4da98c.png" alt="D'Lux app preview" />
-              <img src="./assets/f3db1672-f80a-429b-a8f0-dbeb97bd43d9.png" alt="D'Lux app preview" />
-              <img src="./assets/89d31e1f-f4d0-47f4-8096-c91997c75a7b.png" alt="D'Lux app preview" />
-              <img src="./assets/d2565697-db7c-48cd-95cb-9b88ff2b24cb.png" alt="D'Lux app preview" />
+              <button class="service-carousel__button" type="button" data-service-next aria-label="Next service">›</button>
             </div>
           </div>
         </section>
 
         <section class="section about-section" id="about">
           <div class="container about-grid">
+            <img class="about-image" src="./assets/new-design/about-room.png" alt="Modern D'Lux dental lounge" />
             <div class="section-heading">
-              <h2>Who We Are</h2>
-              <p>D'Lux Dental Myanmar is dedicated to providing high-quality dental care with modern technology, experienced professionals, and a patient-centered approach to help you achieve a healthy, confident smile.</p>
+              <h2>More Than a Dental Office</h2>
+              <p>We've reimagined the dental experience around comfort, precision, and personal attention. From the moment you step in, you'll feel the difference of a luxury clinic.</p>
+              <a class="button button--light button--small" href="./meet-dentists.html">Meet Our Team</a>
             </div>
-            <img class="about-logo" src="./assets/53d39229-1191-45c0-a890-2c95dc95e4e8.jpg" alt="D'Lux Premium Dental Clinic" />
           </div>
         </section>
 
-        <section class="section location-section">
-          <div class="container section__inner">
-            <div class="section-heading">
-              <h2>Where you can find Us</h2>
-              <p>Find the nearest clinic and visit us for quality dental care.</p>
-            </div>
-            <iframe
-              class="map-embed"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16009.11215952012!2d96.16547595239356!3d16.859938628517167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c19361b5045b15%3A0xfd55b6ec5f93245f!2sD&#39;%20Lux%20Premium%20Dental%20Clinic%20North%20Dagon%20Branch!5e1!3m2!1sen!2ssg!4v1780311537627!5m2!1sen!2ssg"
-              title="D'Lux Premium Dental Clinic North Dagon Branch map"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+        <section class="section reviews-section" id="reviews">
+          <div class="container section-heading">
+            <h2>Real Results. Real Patients.</h2>
+            <p>With glowing Google reviews and strong ties to the Mooresville community, our patients say it best:</p>
+          </div>
+          <div class="container review-grid">
+            <article class="review-card">
+              <div class="review-profile">
+                <img src="./assets/new-design/avatar-sarah.png" alt="Sarah Jenkins" />
+                <div>
+                  <h3>Sarah Jenkins</h3>
+                  <p>Teeth Whitening</p>
+                </div>
+              </div>
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p>I was nervous about whitening, but the team made me feel so calm. The results are amazing - my smile looks brighter and more natural than I expected. Highly recommend!</p>
+            </article>
+            <article class="review-card">
+              <div class="review-profile">
+                <img src="./assets/new-design/avatar-mark.png" alt="Mark Thompson" />
+                <div>
+                  <h3>Mark Thompson</h3>
+                  <p>Dental Implants</p>
+                </div>
+              </div>
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p>The implant process was smoother than I expected. The staff is friendly, the clinic is spotless, and the follow-up care was excellent. I'm thrilled with the result.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-profile">
+                <img src="./assets/new-design/avatar-emily.png" alt="Emily Patel" />
+                <div>
+                  <h3>Emily Patel</h3>
+                  <p>Orthodontics</p>
+                </div>
+              </div>
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p>I was hesitant about orthodontics as an adult, but the team explained everything clearly and made the process painless. My smile is straighter and I feel so much more confident.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-profile">
+                <img src="./assets/new-design/avatar-daniel.png" alt="Daniel Kim" />
+                <div>
+                  <h3>Daniel Kim</h3>
+                  <p>Root Canal</p>
+                </div>
+              </div>
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p>I was dreading a root canal, but it was surprisingly painless. The dentist was gentle, explained every step, and the recovery was quick. Great care from start to finish.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-profile">
+                <img src="./assets/new-design/avatar-sofia.png" alt="Sofia Rodriguez" />
+                <div>
+                  <h3>Sofia Rodriguez</h3>
+                  <p>Veneers</p>
+                </div>
+              </div>
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p>My veneers look and feel like my natural teeth. The clinic was clean, the staff was kind, and the results are stunning. I finally feel comfortable smiling in photos.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-profile">
+                <img src="./assets/new-design/avatar-priya.png" alt="Priya Shah" />
+                <div>
+                  <h3>Priya Shah</h3>
+                  <p>Invisalign</p>
+                </div>
+              </div>
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p>Invisalign was the perfect choice for me. The appointments were quick, the aligners were comfortable, and the progress was steady. I love my new smile - it's straight and natural-looking.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section care-section" id="care">
+          <div class="container section-heading section-heading--center">
+            <h2>Total Dental Care, Tailored for You</h2>
+            <p>We're more than a dental office we're a sanctuary for your smile. Here's what sets us apart:</p>
+          </div>
+          <div class="care-showcase">
+            <article class="care-card care-card--side">
+              <img src="./assets/new-design/care-bilingual.png" alt="Dental treatment room" />
+              <h3>Bilingual Team</h3>
+              <p>Serving patients with care in both English and Spanish</p>
+            </article>
+            <article class="care-card care-card--main">
+              <img src="./assets/new-design/care-technology.png" alt="Advanced dental treatment room" />
+              <h3>Advanced Technology</h3>
+              <p>Digital X-rays, 3D scanning, and same-day treatment solutions</p>
+            </article>
+            <article class="care-card care-card--side">
+              <img src="./assets/new-design/care-comfort.png" alt="Dental model and equipment" />
+              <h3>Comfort-First Care</h3>
+              <p>Sedation options and a gentle approach for every patient</p>
+            </article>
+          </div>
+          <div class="carousel-controls" aria-hidden="true">
+            <span>‹</span>
+            <span>›</span>
+          </div>
+        </section>
+
+        <section class="section gallery-section" id="clinic">
+          <div class="container section-heading">
+            <h2>Experience Our Modern Clini</h2>
+            <p>Discover a welcoming space designed for your comfort, equipped with advanced technology and modern facilities to provide exceptional dental care in a relaxing environment.</p>
+          </div>
+          <div class="container clinic-gallery">
+            <img src="./assets/new-design/gallery-6.png" alt="D'Lux clinic exterior" />
+            <img src="./assets/new-design/gallery-3.png" alt="Dental treatment room" />
+            <img src="./assets/new-design/gallery-2.png" alt="Dental equipment" />
+            <img src="./assets/new-design/gallery-1.png" alt="D'Lux reception area" />
+            <img src="./assets/new-design/gallery-5.png" alt="Modern dental operatory" />
+            <img src="./assets/new-design/gallery-4.png" alt="D'Lux consultation room" />
+          </div>
+        </section>
+
+        <section class="section cta-section" id="cta">
+          <div class="container cta__inner">
+            <h2>Ready for Your Best Smile?</h2>
+            <p>New patients are always welcome. Book your consultation today and experience the D'Lux difference.</p>
+            <a class="button button--outline" href="tel:+959940077977">Call +95 9 940 077 977</a>
           </div>
         </section>
       </main>
 
-      <footer class="site-footer">
-        <div class="container footer__inner">
+      <footer class="site-footer" id="contact">
+        <div class="footer__top">
           <div class="footer-brand">
-            <img src="./assets/53d39229-1191-45c0-a890-2c95dc95e4e8.jpg" alt="D'Lux Premium Dental Clinic" />
-            <p>D'Lux Premium Dental Clinic</p>
+            <h2>D'Lux Premium Dental Clinic</h2>
+            <p>Luxury dental care in Yangon, Myanmar. Where precision meets comfort.</p>
             <div class="social-links">
-              <a href="#" aria-label="Instagram">
-                <img src="./assets/66a3006c-f20e-4066-8f26-c7ec0292c080.svg" alt="" />
-              </a>
-              <a href="https://www.facebook.com/dluxdental" aria-label="Facebook">
-                <img src="./assets/f8069e60-76ed-40ef-9152-1f27c604461e.svg" alt="" />
-              </a>
+              <a href="#" aria-label="Instagram"><img src="./assets/new-design/instagram.svg" alt="" /></a>
+              <a href="https://www.facebook.com/dluxdental" aria-label="Facebook"><img src="./assets/new-design/facebook.svg" alt="" /></a>
+              <a href="#" aria-label="YouTube"><img src="./assets/new-design/youtube.svg" alt="" /></a>
             </div>
           </div>
-          <div class="footer-info">
-            <h2>Our Info</h2>
-            <p>
-              <img src="./assets/589965d9-bf41-43b9-98a0-505cc91d27c5.svg" alt="" />
-              <a href="tel:+959940077977">+95 9 940 077977</a>
-            </p>
-            <p>
-              <img src="./assets/f23a9145-31d5-4a33-8098-d5ee6a9e6528.svg" alt="" />
-              <span>No. 1186, 1st Floor, Pinlon Road, 35 Ward, North Dagon, Yangon, Myanmar.</span>
-            </p>
+          <div class="footer-columns">
+            <div>
+              <h3>About Us</h3>
+              <a href="./meet-dentists.html">Meet the Dentists</a>
+              <a href="./meet-dentists.html">Meet Our Team</a>
+              <a href="./index.html#clinic">Office Tour</a>
+            </div>
+            <div>
+              <h3>Patient Experiences</h3>
+              <a href="#reviews">Before &amp; After</a>
+              <a href="#reviews">Patient Reviews</a>
+            </div>
+            <div>
+              <h3>Services</h3>
+              <a href="#services">Cosmetic</a>
+              <a href="#services">Implants</a>
+              <a href="#services">Sedation</a>
+            </div>
+            <div>
+              <h3>Clinic Info</h3>
+              <a href="./contact.html">Contact</a>
+              <a href="./faq.html">FAQs</a>
+            </div>
           </div>
         </div>
+        <div class="footer__bottom">
+          <p>© 2026 D'Lux Premium Dental Clinic. All rights reserved.</p>
+          <div>
+            <p>No. 1186, 1st Floor, Pinlon Road, 35 Ward, North Dagon, Yangon, Myanmar.</p>
+            <a href="tel:+959940077977">(+95) 9 940 077977</a>
+          </div>
+        </div>
+        <p class="footer-credit">Powered by GreatTime App</p>
       </footer>
     </div>
     <script src="./script.js?v=4"></script>

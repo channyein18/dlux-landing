@@ -21,3 +21,61 @@ document.addEventListener("keydown", (event) => {
   menuButton?.setAttribute("aria-expanded", "false");
   menuButton?.setAttribute("aria-label", "Open navigation menu");
 });
+
+document.querySelectorAll(".faq-item").forEach((item) => {
+  const question = item.querySelector(".faq-question");
+  const answer = item.querySelector(".faq-answer");
+  const icon = item.querySelector(".faq-question img");
+
+  question?.addEventListener("click", () => {
+    const isOpen = item.classList.toggle("faq-item--open");
+    question.setAttribute("aria-expanded", String(isOpen));
+    if (answer) answer.hidden = !isOpen;
+    if (icon) {
+      icon.src = isOpen ? "./assets/new-design/faq-chevron-up.svg" : "./assets/new-design/faq-chevron-down.svg";
+    }
+  });
+});
+
+const serviceCarousel = document.querySelector(".service-carousel");
+
+if (serviceCarousel) {
+  const track = serviceCarousel.querySelector(".service-showcase");
+  const slides = Array.from(serviceCarousel.querySelectorAll(".service-slide"));
+  const dots = Array.from(serviceCarousel.querySelectorAll(".service-carousel__dots span"));
+  const previousButton = serviceCarousel.querySelector("[data-service-prev]");
+  const nextButton = serviceCarousel.querySelector("[data-service-next]");
+  let activeIndex = 0;
+
+  const updateDots = () => {
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("is-active", index === activeIndex);
+    });
+  };
+
+  const goToSlide = (index) => {
+    if (!track || slides.length === 0) return;
+    activeIndex = (index + slides.length) % slides.length;
+    slides[activeIndex].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    updateDots();
+  };
+
+  previousButton?.addEventListener("click", () => goToSlide(activeIndex - 1));
+  nextButton?.addEventListener("click", () => goToSlide(activeIndex + 1));
+
+  track?.addEventListener("scroll", () => {
+    if (slides.length === 0) return;
+    const trackCenter = track.scrollLeft + track.clientWidth / 2;
+    const nearestIndex = slides.reduce((nearest, slide, index) => {
+      const slideCenter = slide.offsetLeft + slide.clientWidth / 2;
+      const nearestSlide = slides[nearest];
+      const nearestCenter = nearestSlide.offsetLeft + nearestSlide.clientWidth / 2;
+      return Math.abs(slideCenter - trackCenter) < Math.abs(nearestCenter - trackCenter) ? index : nearest;
+    }, activeIndex);
+
+    if (nearestIndex !== activeIndex) {
+      activeIndex = nearestIndex;
+      updateDots();
+    }
+  }, { passive: true });
+}
