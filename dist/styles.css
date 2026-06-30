@@ -346,9 +346,9 @@ body.nav-open .menu-line:nth-child(3) {
 
 .service-showcase {
   display: flex;
-  gap: 40px;
+  gap: 28px;
   overflow-x: auto;
-  padding: 0 calc((100vw - min(var(--container), calc(100vw - (var(--gutter) * 2)))) / 2) 12px;
+  padding: 0 calc((100vw - min(980px, calc(100vw - (var(--gutter) * 2)))) / 2) 12px;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
@@ -360,15 +360,15 @@ body.nav-open .menu-line:nth-child(3) {
 
 .service-slide {
   position: relative;
-  min-width: min(1200px, calc(100vw - (var(--gutter) * 2)));
+  min-width: min(820px, calc(100vw - (var(--gutter) * 2)));
   overflow: hidden;
-  border-radius: 32px;
+  border-radius: 24px;
   scroll-snap-align: center;
 }
 
 .service-slide img {
   width: 100%;
-  height: 448px;
+  height: 380px;
   object-fit: cover;
 }
 
@@ -376,15 +376,11 @@ body.nav-open .menu-line:nth-child(3) {
   position: absolute;
   left: 24px;
   bottom: 24px;
-  width: min(460px, calc(100% - 48px));
-  border-radius: 32px;
+  width: min(360px, calc(100% - 48px));
+  border-radius: 24px;
   background: #142957;
-  padding: 40px;
-}
-
-.service-slide div {
-  min-height: 218px;
-  padding: 60px 40px;
+  min-height: 164px;
+  padding: 32px;
 }
 
 .service-carousel__controls {
