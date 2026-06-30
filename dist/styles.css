@@ -1501,7 +1501,7 @@ body.nav-open .menu-line:nth-child(3) {
 
   .nav-submenu {
     position: static;
-    display: flex;
+    display: none;
     padding: 0 0 8px 20px;
     background: transparent;
   }
