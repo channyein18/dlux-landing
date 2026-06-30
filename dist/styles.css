@@ -860,10 +860,17 @@ body.nav-open .menu-line:nth-child(3) {
 }
 
 .faq-question {
+  appearance: none;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
 }
 
 .faq-question h3 {
@@ -881,11 +888,15 @@ body.nav-open .menu-line:nth-child(3) {
   flex: 0 0 auto;
 }
 
-.faq-item > p {
+.faq-answer {
   margin: 16px 0 0;
   color: rgba(250, 247, 244, 0.8);
   font-size: 16px;
   line-height: 24px;
+}
+
+.faq-answer[hidden] {
+  display: none;
 }
 
 .blog-page {
@@ -1822,7 +1833,7 @@ body.nav-open .menu-line:nth-child(3) {
   }
 
   .faq-question h3,
-  .faq-item > p {
+  .faq-answer {
     font-size: 15px;
     line-height: 23px;
   }

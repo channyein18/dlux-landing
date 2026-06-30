@@ -21,3 +21,18 @@ document.addEventListener("keydown", (event) => {
   menuButton?.setAttribute("aria-expanded", "false");
   menuButton?.setAttribute("aria-label", "Open navigation menu");
 });
+
+document.querySelectorAll(".faq-item").forEach((item) => {
+  const question = item.querySelector(".faq-question");
+  const answer = item.querySelector(".faq-answer");
+  const icon = item.querySelector(".faq-question img");
+
+  question?.addEventListener("click", () => {
+    const isOpen = item.classList.toggle("faq-item--open");
+    question.setAttribute("aria-expanded", String(isOpen));
+    if (answer) answer.hidden = !isOpen;
+    if (icon) {
+      icon.src = isOpen ? "./assets/new-design/faq-chevron-up.svg" : "./assets/new-design/faq-chevron-down.svg";
+    }
+  });
+});
