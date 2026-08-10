@@ -1298,6 +1298,77 @@ body.nav-open .menu-line:nth-child(3) {
   background: var(--color-bg);
 }
 
+.sitemap-page {
+  background: var(--color-bg);
+}
+
+.subpage-hero {
+  padding: 120px var(--gutter) 64px;
+}
+
+.subpage-hero h1 {
+  margin: 0;
+  color: var(--color-gold);
+  font-family: var(--font-display);
+  font-size: clamp(44px, 3.4vw, 64px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.team-feature-grid,
+.case-grid,
+.service-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  padding: 40px 0 120px;
+}
+
+.case-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.team-feature-grid article,
+.case-grid article,
+.service-detail-grid article {
+  min-width: 0;
+  border-radius: 8px;
+  background: var(--color-panel);
+  padding: 24px;
+}
+
+.team-feature-grid img,
+.case-grid img {
+  width: 100%;
+  height: 320px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.team-feature-grid h2,
+.case-grid h2,
+.service-detail-grid h2 {
+  margin: 24px 0 12px;
+  color: var(--color-cream);
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.service-detail-grid h2 {
+  margin-top: 0;
+}
+
+.team-feature-grid p,
+.service-detail-grid p,
+.service-cost {
+  margin: 0 0 18px;
+  color: rgba(250, 247, 244, 0.8);
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .contact-visit {
   display: grid;
   grid-template-columns: minmax(0, 600px) minmax(0, 600px);
@@ -1641,6 +1712,12 @@ body.nav-open .menu-line:nth-child(3) {
     grid-row: auto !important;
   }
 
+  .team-feature-grid,
+  .case-grid,
+  .service-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .footer-columns {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1853,6 +1930,9 @@ body.nav-open .menu-line:nth-child(3) {
 
   .review-grid,
   .clinic-gallery,
+  .team-feature-grid,
+  .case-grid,
+  .service-detail-grid,
   .footer-columns {
     grid-template-columns: 1fr;
   }
@@ -1863,6 +1943,17 @@ body.nav-open .menu-line:nth-child(3) {
 
   .clinic-gallery img {
     height: 220px;
+  }
+
+  .team-feature-grid,
+  .case-grid,
+  .service-detail-grid {
+    padding-bottom: 80px;
+  }
+
+  .team-feature-grid img,
+  .case-grid img {
+    height: 260px;
   }
 
   .review-card {
