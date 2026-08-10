@@ -1204,29 +1204,10 @@ body.nav-open .menu-line:nth-child(3) {
   padding: 24px;
 }
 
-.dentist-card--wide {
-  grid-column: span 2;
-}
-
 .dentist-media {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
-  border-radius: 8px;
-  background: #f7f3ee;
-  object-fit: contain;
-}
-
-.dentist-media--pair {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.dentist-media--pair img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  min-width: 0;
   border-radius: 8px;
   background: #f7f3ee;
   object-fit: contain;
@@ -1841,10 +1822,6 @@ body.nav-open .menu-line:nth-child(3) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .dentist-card--wide {
-    grid-column: 1 / -1;
-  }
-
   .contact-visit {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2192,14 +2169,6 @@ body.nav-open .menu-line:nth-child(3) {
     min-height: 0;
     border-radius: 18px;
     padding: 20px;
-  }
-
-  .dentist-card--wide {
-    grid-column: auto;
-  }
-
-  .dentist-media--pair {
-    grid-template-columns: 1fr;
   }
 
   .dentist-profile h2 {
