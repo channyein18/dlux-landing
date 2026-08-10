@@ -1403,6 +1403,13 @@ body.nav-open .menu-line:nth-child(3) {
   gap: 60px;
 }
 
+.contact-location-list {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .contact-visit h1,
 .contact-intro h2 {
   margin: 0;
@@ -1438,6 +1445,24 @@ body.nav-open .menu-line:nth-child(3) {
   font-weight: 400;
   line-height: 41.6px;
   overflow-wrap: anywhere;
+}
+
+.contact-info-block a {
+  width: fit-content;
+  max-width: 100%;
+  color: var(--color-cream);
+  font-size: 18px;
+  line-height: 27px;
+  overflow-wrap: anywhere;
+}
+
+.contact-map-link {
+  border: 1px solid rgba(250, 247, 244, 0.3);
+  border-radius: 999px;
+  padding: 10px 18px;
+  color: var(--color-gold) !important;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .contact-visit__map {
