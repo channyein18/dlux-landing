@@ -1337,6 +1337,10 @@ body.nav-open .menu-line:nth-child(3) {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.team-feature-grid--photos {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .team-feature-grid article,
 .case-grid article,
 .service-detail-grid article {
@@ -1352,6 +1356,11 @@ body.nav-open .menu-line:nth-child(3) {
   height: 320px;
   border-radius: 8px;
   object-fit: cover;
+}
+
+.team-feature-grid--photos img {
+  height: auto;
+  aspect-ratio: 16 / 9;
 }
 
 .team-feature-grid h2,
