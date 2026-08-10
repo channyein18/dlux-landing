@@ -132,74 +132,104 @@
         <section class="section reviews-section" id="reviews">
           <div class="container section-heading">
             <h2>Real Results. Real Patients.</h2>
-            <p>With glowing Google reviews and strong ties to the Mooresville community, our patients say it best:</p>
+            <p>D'Lux patients share the comfort, clarity, and confidence they feel throughout their care.</p>
           </div>
+          <form class="review-composer container" aria-label="Write a patient review">
+            <div>
+              <h3>Share Your Experience</h3>
+              <p>Tap a rating and tell us about your visit.</p>
+            </div>
+            <div class="review-rating" aria-label="Choose a star rating">
+              <button type="button" data-rating="1" aria-label="1 star">★</button>
+              <button type="button" data-rating="2" aria-label="2 stars">★</button>
+              <button type="button" data-rating="3" aria-label="3 stars">★</button>
+              <button type="button" data-rating="4" aria-label="4 stars">★</button>
+              <button type="button" data-rating="5" aria-label="5 stars">★</button>
+            </div>
+            <div class="review-composer__fields" hidden>
+              <div class="contact-form__row">
+                <label>
+                  Name
+                  <input type="text" name="reviewer" placeholder="Your name" required />
+                </label>
+                <label>
+                  Treatment
+                  <input type="text" name="treatment" placeholder="Cleaning, implant, braces..." />
+                </label>
+              </div>
+              <label>
+                Review
+                <textarea name="review" placeholder="Write your review" required></textarea>
+              </label>
+              <button type="submit">Post Review</button>
+            </div>
+          </form>
           <div class="container review-grid">
             <article class="review-card">
               <div class="review-profile">
-                <img src="./assets/new-design/avatar-sarah.png" alt="Sarah Jenkins" />
+                <img src="./assets/new-design/avatar-sarah.png" alt="D'Lux patient portrait" />
                 <div>
-                  <h3>Sarah Jenkins</h3>
+                  <h3>D'Lux Patient</h3>
                   <p>Teeth Whitening</p>
                 </div>
               </div>
               <div class="stars" aria-label="5 star rating">★★★★★</div>
-              <p>I was nervous about whitening, but the team made me feel so calm. The results are amazing - my smile looks brighter and more natural than I expected. Highly recommend!</p>
+              <p>The team made me feel calm and explained every step clearly. My smile looks brighter and natural, and the visit felt very comfortable.</p>
             </article>
             <article class="review-card">
               <div class="review-profile">
-                <img src="./assets/new-design/avatar-mark.png" alt="Mark Thompson" />
+                <img src="./assets/new-design/avatar-mark.png" alt="D'Lux patient portrait" />
                 <div>
-                  <h3>Mark Thompson</h3>
+                  <h3>D'Lux Patient</h3>
                   <p>Dental Implants</p>
                 </div>
               </div>
               <div class="stars" aria-label="5 star rating">★★★★★</div>
-              <p>The implant process was smoother than I expected. The staff is friendly, the clinic is spotless, and the follow-up care was excellent. I'm thrilled with the result.</p>
+              <p>The implant process was smoother than expected. The clinic was spotless, the staff were friendly, and the follow-up care was excellent.</p>
             </article>
             <article class="review-card">
               <div class="review-profile">
-                <img src="./assets/new-design/avatar-emily.png" alt="Emily Patel" />
+                <img src="./assets/new-design/avatar-emily.png" alt="D'Lux patient portrait" />
                 <div>
-                  <h3>Emily Patel</h3>
+                  <h3>D'Lux Patient</h3>
                   <p>Orthodontics</p>
                 </div>
               </div>
               <div class="stars" aria-label="5 star rating">★★★★★</div>
-              <p>I was hesitant about orthodontics as an adult, but the team explained everything clearly and made the process painless. My smile is straighter and I feel so much more confident.</p>
+              <p>The specialists explained the orthodontic plan clearly and made each appointment easy. I feel much more confident with my smile.</p>
             </article>
             <article class="review-card">
               <div class="review-profile">
-                <img src="./assets/new-design/avatar-daniel.png" alt="Daniel Kim" />
+                <img src="./assets/new-design/avatar-daniel.png" alt="D'Lux patient portrait" />
                 <div>
-                  <h3>Daniel Kim</h3>
+                  <h3>D'Lux Patient</h3>
                   <p>Root Canal</p>
                 </div>
               </div>
               <div class="stars" aria-label="5 star rating">★★★★★</div>
-              <p>I was dreading a root canal, but it was surprisingly painless. The dentist was gentle, explained every step, and the recovery was quick. Great care from start to finish.</p>
+              <p>I was nervous about root canal treatment, but the dentist was gentle, explained every step, and made the treatment surprisingly comfortable.</p>
             </article>
             <article class="review-card">
               <div class="review-profile">
-                <img src="./assets/new-design/avatar-sofia.png" alt="Sofia Rodriguez" />
+                <img src="./assets/new-design/avatar-sofia.png" alt="D'Lux patient portrait" />
                 <div>
-                  <h3>Sofia Rodriguez</h3>
+                  <h3>D'Lux Patient</h3>
                   <p>Veneers</p>
                 </div>
               </div>
               <div class="stars" aria-label="5 star rating">★★★★★</div>
-              <p>My veneers look and feel like my natural teeth. The clinic was clean, the staff was kind, and the results are stunning. I finally feel comfortable smiling in photos.</p>
+              <p>My veneers look and feel natural. The clinic is clean, the team is kind, and I finally feel comfortable smiling in photos.</p>
             </article>
             <article class="review-card">
               <div class="review-profile">
-                <img src="./assets/new-design/avatar-priya.png" alt="Priya Shah" />
+                <img src="./assets/new-design/avatar-priya.png" alt="D'Lux patient portrait" />
                 <div>
-                  <h3>Priya Shah</h3>
+                  <h3>D'Lux Patient</h3>
                   <p>Invisalign</p>
                 </div>
               </div>
               <div class="stars" aria-label="5 star rating">★★★★★</div>
-              <p>Invisalign was the perfect choice for me. The appointments were quick, the aligners were comfortable, and the progress was steady. I love my new smile - it's straight and natural-looking.</p>
+              <p>The aligner appointments were quick, comfortable, and well organized. The progress was steady and the final result feels natural.</p>
             </article>
           </div>
         </section>
