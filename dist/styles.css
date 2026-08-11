@@ -682,6 +682,77 @@ body.nav-open .menu-line:nth-child(3) {
   grid-row: 2 / span 2;
 }
 
+.clinic-tour-section {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  padding: 0 0 120px;
+}
+
+.clinic-tour-branch {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.clinic-tour-branch__heading {
+  display: flex;
+  min-width: 0;
+  align-items: end;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.clinic-tour-branch__heading p {
+  margin: 0;
+  color: var(--color-gold);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.clinic-tour-branch__heading h2 {
+  max-width: 780px;
+  margin: 0;
+  color: var(--color-cream);
+  font-family: var(--font-display);
+  font-size: clamp(34px, 3vw, 52px);
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: right;
+}
+
+.clinic-tour-gallery {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-auto-rows: 180px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.clinic-tour-gallery img {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.clinic-tour-gallery__wide {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.clinic-tour-gallery__tall {
+  grid-row: span 2;
+}
+
+.clinic-tour-gallery--compact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .cta-section {
   padding: 100px 0;
 }
@@ -1777,6 +1848,17 @@ body.nav-open .menu-line:nth-child(3) {
     grid-row: auto !important;
   }
 
+  .clinic-tour-section {
+    gap: 72px;
+    padding-bottom: 96px;
+  }
+
+  .clinic-tour-gallery,
+  .clinic-tour-gallery--compact {
+    grid-auto-rows: 170px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .team-feature-grid,
   .case-grid,
   .service-detail-grid {
@@ -1884,6 +1966,22 @@ body.nav-open .menu-line:nth-child(3) {
 }
 
 @media (max-width: 960px) {
+  .clinic-tour-branch__heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .clinic-tour-branch__heading h2 {
+    text-align: left;
+  }
+
+  .clinic-tour-gallery,
+  .clinic-tour-gallery--compact {
+    grid-auto-rows: 180px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .contact-location-list {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -2005,6 +2103,36 @@ body.nav-open .menu-line:nth-child(3) {
 
   .clinic-gallery img {
     height: 220px;
+  }
+
+  .clinic-tour-section {
+    gap: 56px;
+    padding-bottom: 80px;
+  }
+
+  .clinic-tour-branch {
+    gap: 24px;
+  }
+
+  .clinic-tour-branch__heading h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .clinic-tour-gallery,
+  .clinic-tour-gallery--compact {
+    grid-auto-rows: auto;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .clinic-tour-gallery img,
+  .clinic-tour-gallery__wide,
+  .clinic-tour-gallery__tall {
+    grid-column: auto;
+    grid-row: auto;
+    height: auto;
+    aspect-ratio: 4 / 3;
   }
 
   .team-feature-grid,
