@@ -930,7 +930,15 @@ body.nav-open .menu-line:nth-child(3) {
   display: flex;
   max-width: 600px;
   flex-direction: column;
-  gap: 40px;
+  gap: 22px;
+}
+
+.about-story__eyebrow {
+  color: var(--color-gold) !important;
+  font-size: 15px !important;
+  font-weight: 700;
+  line-height: 1 !important;
+  text-transform: uppercase;
 }
 
 .about-story__copy h2 {
@@ -2166,7 +2174,7 @@ body.nav-open .menu-line:nth-child(3) {
   }
 
   .about-story__copy {
-    gap: 24px;
+    gap: 18px;
   }
 
   .about-story__copy h2 {
