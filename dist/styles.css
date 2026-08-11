@@ -880,7 +880,7 @@ body.nav-open .menu-line:nth-child(3) {
 
 .about-hero .section-heading {
   gap: 24px;
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 .about-hero h1 {
